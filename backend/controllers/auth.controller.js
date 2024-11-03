@@ -71,6 +71,12 @@ export const login = async (req, res) => {
 }
 
 export const logout = (req, res) => {
-  res.send('logout')
+  try {
+    res.cookie("jwt", "", {maxAge: 0})
+    res.status(200).json({Message: "Looged out successfull"})
+  } catch (error) {
+    console.log("Logout error", error.message)
+    res.status(500).json({error: "Internal server error"})
+  }
 }
 
