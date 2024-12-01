@@ -1,4 +1,5 @@
 import React from 'react'
+import GenderCheck from './GenderCheck'
 
 const SingUp = () => {
   return (
@@ -10,29 +11,30 @@ const SingUp = () => {
         <form>
           <div>
             <label className='label p-2'>
-              <span className='text-base label-text'>Full Name</span>
+              <span className='text-base label-text text-white'>Full Name</span>
             </label>
             <input type='text' placeholder='Enter Name' className='input input-bordered w-full h-10' />
           </div>
           <div>
             <label className='label p-2'>
-              <span className='text-base label-text'>Username</span>
+              <span className='text-base label-text text-white'>Username</span>
             </label>
             <input type='text' placeholder='Enter Username' className='input input-bordered w-full h-10' />
           </div>
           <div>
             <label className='label p-2'>
-              <span className='text-base label-text'>Password</span>
+              <span className='text-base label-text text-white'>Password</span>
             </label>
             <input type='password' placeholder='Enter Password' className='input input-bordered w-full h-10' />
           </div>
           <div>
             <label className='label p-2'>
-              <span className='text-base label-text'>Confirm Password</span>
+              <span className='text-base label-text text-white'>Confirm Password</span>
             </label>
-            <input type='password' placeholder='Enter Password' className='input input-bordered w-full h-10' />
+            <input type='password' placeholder='Enter Password' className='input input-bordered w-full h-10 mb-3' />
           </div>
-          <a href='#' className='text-sm hover:underline text-blue-600 mt-2 inline-block'>Already have an account?</a>
+          <GenderCheck />
+          <a href='#' className='text-sm hover:underline text-blue-600 mt-4 inline-block'>Already have an account?</a>
           <div>
             <button className='btn btn-block btn-sm mt-2'>Sign up</button>
           </div>
