@@ -10,13 +10,13 @@ const Login = () => {
         <form>
           <div>
             <label className='label p-2'>
-              <span className='text-base text-label'>Username</span>
+              <span className='text-base text-label text-white'>Username</span>
             </label>
             <input type='text' placeholder='Enter Username' className='input input-bordered w-full h-10' />
           </div>
           <div>
             <label className='label p-2'>
-              <span className='text-base text-label'>Password</span>
+              <span className='text-base text-label text-white'>Password</span>
             </label>
             <input type='password' placeholder='Enter Password' className='input input-bordered w-full h-10' />
           </div>
