@@ -1,5 +1,6 @@
 import React from 'react'
 import GenderCheck from './GenderCheck'
+import { Link } from 'react-router-dom'
 
 const SingUp = () => {
   return (
@@ -34,7 +35,7 @@ const SingUp = () => {
             <input type='password' placeholder='Enter Password' className='input input-bordered w-full h-10 mb-3' />
           </div>
           <GenderCheck />
-          <a href='#' className='text-sm hover:underline text-blue-600 mt-4 inline-block'>Already have an account?</a>
+          <Link to='/login' className='text-sm hover:underline text-white mt-4 inline-block'>Already have an account?</Link>
           <div>
             <button className='btn btn-block btn-sm mt-2'>Sign up</button>
           </div>
