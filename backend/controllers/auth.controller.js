@@ -25,7 +25,7 @@ export const signup = async (req, res) => {
       username,
       password: hashedPassword,
       gender,
-      profilePic: gender === "Male" ? manProfilePic : womanProfilePic,
+      profilePic: gender === "male" ? manProfilePic : womanProfilePic,
     })
 
     if (newUser) {
@@ -48,7 +48,7 @@ export const signup = async (req, res) => {
 
 export const login = async (req, res) => {
   try {
-    const {userName, password} = req.body;
+    const {username, password} = req.body;
 
     const user = await User.findOne({username})
     const isPasswordCorrect = await bcrypt.compare(password, user?.password || "")
