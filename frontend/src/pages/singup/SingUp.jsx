@@ -68,7 +68,9 @@ const SingUp = () => {
           <GenderCheck onCheckBoxChange={handleGender} selectedGender={inputs.gender} />
           <Link to='/login' className='text-sm hover:underline text-white mt-4 inline-block'>Already have an account?</Link>
           <div>
-            <button className='btn btn-block btn-sm mt-2'>Sign up</button>
+            <button className='btn btn-block btn-sm mt-2 border border-slate-700' disabled={loading}>
+							{loading ? <span className='loading loading-spinner'></span> : "Sign Up"}
+						</button>
           </div>
         </form>
       </div>
